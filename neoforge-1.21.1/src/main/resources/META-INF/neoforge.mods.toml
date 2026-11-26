@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/HellFraud/ScaleTooltips/issues"
+
+[[mods]]
+modId = "scaletooltips"
+version = "${version}"
+displayName = "Scale Tooltips"
+authors = "Hell_Fraud"
+description = "Scales oversized tooltips down to fit the screen. Client only."
+logoFile = "assets/scaletooltips/icon.png"
+
+[[mixins]]
+config = "scaletooltips.mixins.json"
+
+[[dependencies.scaletooltips]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.scaletooltips]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "CLIENT"

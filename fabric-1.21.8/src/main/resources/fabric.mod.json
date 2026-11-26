@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "scaletooltips",
+  "version": "${version}",
+  "name": "Scale Tooltips",
+  "description": "Scales oversized tooltips down to fit the screen. Client only.",
+  "authors": ["Hell_Fraud"],
+  "contact": {
+    "homepage": "https://github.com/HellFraud/ScaleTooltips",
+    "sources": "https://github.com/HellFraud/ScaleTooltips",
+    "issues": "https://github.com/HellFraud/ScaleTooltips/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/scaletooltips/icon.png",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "scaletooltips.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.8",
+    "java": ">=21"
+  }
+}
