@@ -2,9 +2,7 @@
 
 ![Scale Tooltips 封面](art/cover.png)
 
-Lore 一多，物品提示框就容易冲出屏幕。Scale Tooltips 会把整个提示框按比例缩小，让文字、图标和边框都留在窗口里。普通大小的提示框不会被缩小。
-
-模组没有配置界面，也没有其他功能，装上就生效。
+有些模组和服务器的自定义物品存在小作文级别的Lore，导致物品提示框干碎屏幕。Scale Tooltips 会把整个提示框按比例缩小，让文字、图标和边框都留在窗口里；不超出屏幕分辨率的Lore不会被缩放。
 
 ## 下载
 
@@ -16,11 +14,11 @@ Lore 一多，物品提示框就容易冲出屏幕。Scale Tooltips 会把整个
 | 1.21.8 | Fabric Loader 0.16.9+ | 21+ | `scale-tooltips-fabric-1.21.8-1.0.0.jar` |
 | 26.3 | Fabric Loader 0.20.1+ | 25+ | `scale-tooltips-fabric-26.3-1.0.0.jar` |
 
-把文件放进客户端的 `mods` 文件夹即可。Fabric 版不需要 Fabric API。
+把文件放进客户端的 `mods` 文件夹。Fabric 无需 Fabric API。
 
-这是客户端模组，在服务端不会生效。误放进服务端也不用紧张：Fabric 会跳过它，NeoForge 不会加载提示框逻辑，不会因此崩溃。
+客户端模组，服务端无效。
 
-## 自己构建
+## 自行构建
 
 安装 JDK 25，在仓库根目录运行：
 
@@ -49,4 +47,4 @@ build-all.bat
 作者：**Hell_Fraud**  
 许可证：[MIT](LICENSE)
 
-封面由 AI 绘制，史蒂夫素材来自用户提供的图片 1。
+封面由 AI 绘制，图片素材来自互联网。
