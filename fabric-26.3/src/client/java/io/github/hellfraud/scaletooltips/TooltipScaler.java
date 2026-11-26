@@ -7,7 +7,7 @@ public final class TooltipScaler {
     }
 
     public static void fit(Matrix3x2fStack pose, int x, int y, int width, int height,
-            int screenWidth, int screenHeight) {
+            int screenWidth, int screenHeight, int mouseX, int mouseY) {
         int boxX = x - 12;
         int boxY = y - 12;
         int boxWidth = width + 24;
@@ -18,8 +18,10 @@ public final class TooltipScaler {
 
         float scaledWidth = boxWidth * scale;
         float scaledHeight = boxHeight * scale;
-        float targetX = Math.clamp(boxX, 0.0f, Math.max(0.0f, screenWidth - scaledWidth));
-        float targetY = Math.clamp(boxY, 0.0f, Math.max(0.0f, screenHeight - scaledHeight));
+        int anchorX = scale < 1.0f ? mouseX + 12 : boxX;
+        int anchorY = scale < 1.0f ? mouseY - 12 : boxY;
+        float targetX = Math.clamp(anchorX, 0.0f, Math.max(0.0f, screenWidth - scaledWidth));
+        float targetY = Math.clamp(anchorY, 0.0f, Math.max(0.0f, screenHeight - scaledHeight));
 
         if (scale == 1.0f && targetX == boxX && targetY == boxY) {
             return;
