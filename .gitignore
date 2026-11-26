@@ -6,14 +6,3 @@ dist/
 .idea/
 *.iml
 *.log
-.reference*/
-.research/
-.tools/
-*.zip
-nbt-*.json
-fabric-*.json
-fabric-*.xml
-neoforge-*.json
-neoforge-*.xml
-minecraft-*.json
-mojang-versions.json

@@ -16,7 +16,7 @@ exit /b 0
 
 :build
 pushd %1
-call gradlew.bat clean build --no-daemon
+call gradlew.bat build --no-daemon
 set result=%errorlevel%
 popd
 exit /b %result%
