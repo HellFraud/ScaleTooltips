@@ -40,6 +40,6 @@ public abstract class GuiGraphicsMixin {
         }
 
         Vector2ic position = positioner.positionTooltip(guiWidth(), guiHeight(), x, y, width, height);
-        TooltipScaler.fit(pose(), position.x(), position.y(), width, height, guiWidth(), guiHeight());
+        TooltipScaler.fit(pose(), position.x(), position.y(), width, height, guiWidth(), guiHeight(), x, y);
     }
 }
