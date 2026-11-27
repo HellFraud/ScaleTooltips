@@ -53,6 +53,6 @@ public abstract class GuiGraphicsExtractorMixin {
         }
 
         Vector2ic position = positioner.positionTooltip(guiWidth(), guiHeight(), x, y, width, height);
-        TooltipScaler.fit(pose(), position.x(), position.y(), width, height, guiWidth(), guiHeight(), x, y);
+        TooltipScaler.fit(pose(), position.x(), position.y(), width, height, guiWidth(), guiHeight(), x);
     }
 }

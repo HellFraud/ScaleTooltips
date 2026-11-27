@@ -41,6 +41,6 @@ public abstract class DrawContextMixin {
 
         Vector2ic position = positioner.getPosition(getScaledWindowWidth(), getScaledWindowHeight(), x, y, width, height);
         TooltipScaler.fit(getMatrices(), position.x(), position.y(), width, height,
-                getScaledWindowWidth(), getScaledWindowHeight(), x, y);
+                getScaledWindowWidth(), getScaledWindowHeight(), x);
     }
 }
